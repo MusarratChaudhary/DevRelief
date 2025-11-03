@@ -28,7 +28,7 @@ export default function HistoryPage() {
 
     (async () => {
       try {
-        const res = await fetch("http://localhost:5000/api/history", {
+        const res = await fetch("https://devrelief.onrender.com/api/history", {
           method: "GET",
           headers: {
             "Content-Type": "application/json",
