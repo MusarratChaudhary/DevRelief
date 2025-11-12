@@ -18,6 +18,7 @@ export default function Home() {
         method: "POST",
         headers: { "Content-Type": "application/json", Authorization:`Bearer ${token}`},
         body: JSON.stringify({ error: errorText, code: codeText }),
+        credentials: "include",
     });
       const data = await res.json();
       console.log("Fix Response:", data);
@@ -93,6 +94,8 @@ export default function Home() {
     </main>
   );
 }
+
+
 
 
 

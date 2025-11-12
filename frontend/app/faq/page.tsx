@@ -34,12 +34,12 @@ export default function FAQPage() {
   return (
     <>
       <Header />
-      <div className="min-h-screen bg-linear-to-br from-zinc-500 via-gray-300 to-gray-50 text-cyan-950 flex flex-col items-center px-6 py-16">
+      <div className="min-h-screen bg-linear-to-b from-gray-800 via-gray-500 to-green-100 text-cyan-950 flex flex-col items-center px-6 py-16">
         <motion.h1
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="text-4xl md:text-5xl font-bold mb-10 text-center"
+          className="text-4xl md:text-5xl font-bold mb-10 text-center bg-linear-to-r from-green-100 via-cyan-400 to-blue-500 bg-clip-text text-transparent"
         >
           Frequently Asked Questions 💬
         </motion.h1>

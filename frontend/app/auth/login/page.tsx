@@ -17,6 +17,7 @@ export default function LoginPage() {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email, password }),
+        credentials: "include",
       });
       const data = await res.json();
       if (!res.ok) throw new Error(data.error || "Login failed");
@@ -32,7 +33,7 @@ export default function LoginPage() {
   return (
     <div className="flex min-h-screen items-center justify-center bg-linear-to-br from-blue-100 to-gray-100">
       <form onSubmit={handleLogin}
-        className="w-96 md:w-full max-w-md bg-white rounded-2xl shadow-xl p-8 space-y-6"
+        className="w-80 md:w-full max-w-md bg-white rounded-2xl shadow-xl p-8 space-y-6"
       >
         <h1 className="text-2xl font-bold text-center text-blue-900">Log In</h1>
 

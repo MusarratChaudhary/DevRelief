@@ -29,6 +29,7 @@ export default function SignUpPage() {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email, password }),
+        credentials: "include",
       });
 
       if (!res.ok) {
@@ -47,7 +48,7 @@ export default function SignUpPage() {
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-100">
       <form onSubmit={handleSignup}
-       className="bg-white p-8 rounded-lg shadow-md w-full max-w-sm space-y-5"
+       className="bg-white p-8 rounded-lg shadow-md w-80 md:w-full max-w-sm space-y-5"
       >
         <h1 className="text-2xl font-bold text-center text-blue-900">Sign Up</h1>
 

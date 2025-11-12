@@ -33,6 +33,7 @@ export default function HistoryPage() {
           headers: {
             "Content-Type": "application/json",
             Authorization: `Bearer ${token}`,
+            credentials: "include",
           },
         });
 

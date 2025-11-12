@@ -67,18 +67,8 @@ export default function HowItWorks() {
       <Header />
 
       {/* Background*/}
-      <div className="mx-auto bg-linear-to-b from-gray-50 via-purple-100 to-pink-50">
+      <div className="relative mx-auto bg-linear-to-b from-gray-50 via-purple-100 to-pink-50 overflow-hidden">
       <div className="absolute inset-0 -z-10" />
-      <motion.div
-        className="absolute inset-0 -z-10"
-        animate={{
-          background: [
-            "radial-gradient(circle at 20% 30%, rgba(59,130,246,0.1), transparent 50%)",
-            "radial-gradient(circle at 80% 70%, rgba(99,102,241,0.1), transparent 50%)",
-          ],
-        }}
-        transition={{ duration: 6, repeat: Infinity, repeatType: "mirror" }}
-      />
 
       {/* HOW IT WORKS SECTION */}
       <section className="py-20 px-6 md:px-16 text-center">
