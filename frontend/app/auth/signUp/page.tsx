@@ -29,7 +29,6 @@ export default function SignUpPage() {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email, password }),
-        credentials: "include",
       });
 
       if (!res.ok) {

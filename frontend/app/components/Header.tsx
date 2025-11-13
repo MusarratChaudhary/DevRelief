@@ -25,7 +25,7 @@ const Header = () => {
   };
 
   return (
-    <nav className="bg-zinc-200 border-b-2 border-white">
+    <nav className="bg-gray-200 border-b-2 border-white">
       <div className="flex items-center justify-between max-w-7xl mx-auto px-4 py-3 h-20">
         {/* Logo */}
         <h1 className="text-2xl md:text-3xl lg:text-4xl text-cyan-900 font-extrabold">
