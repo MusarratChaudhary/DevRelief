@@ -7,7 +7,7 @@ export default function PrivacyPolicyPage() {
   return (
     <>
       <Header />
-      <div className="min-h-screen bg-linear-to-b from-gray-600 via-zinc-300 to-gray-200 text-cyan-900 px-6 py-16 flex flex-col items-center">
+      <div className="min-h-screen bg-linear-to-b from-gray-900 via-zinc-300 to-gray-200 text-cyan-900 px-6 py-16 flex flex-col items-center">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}

@@ -67,7 +67,7 @@ export default function HowItWorks() {
       <Header />
 
       {/* Background*/}
-      <div className="relative mx-auto bg-linear-to-b from-gray-50 via-purple-100 to-pink-50 overflow-hidden">
+      <div className="relative mx-auto bg-linear-to-b from-gray-200 via-purple-100 to-pink-50 overflow-hidden">
       <div className="absolute inset-0 -z-10" />
 
       {/* HOW IT WORKS SECTION */}
@@ -82,7 +82,7 @@ export default function HowItWorks() {
         </motion.h2>
 
         <motion.p
-          className="text-gray-800 max-w-2xl mx-auto mb-16 text-lg"
+          className="text-gray-800 max-w-2xl mx-auto mb-16 text-lg font-serif"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.3, duration: 0.8 }}
@@ -95,7 +95,7 @@ export default function HowItWorks() {
           {steps.map((step, index) => (
             <motion.div
               key={index}
-              className="bg-white/70 backdrop-blur-md border border-gray-100 p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2"
+              className="bg-white/80 backdrop-blur-md border border-gray-100 p-8 rounded-2xl shadow-gray-500 shadow-lg hover:shadow-gray-600 hover:shadow-2xl transition-all duration-500 hover:-translate-y-2"
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -134,7 +134,7 @@ export default function HowItWorks() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
               viewport={{ once: true }}
-              className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition duration-300 border border-cyan-100"
+              className="bg-white p-8 rounded-2xl shadow-gray-600 shadow-lg hover:shadow-gray-500 hover:shadow-2xl transition duration-300 border border-cyan-100"
             >
               <div className="mb-5">{feature.icon}</div>
               <h3 className="text-xl font-semibold text-cyan-700 mb-3">
@@ -170,6 +170,9 @@ export default function HowItWorks() {
     </>
   );
 }
+
+
+
 
 
 

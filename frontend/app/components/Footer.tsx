@@ -1,14 +1,15 @@
 "use client";
 import Link from "next/link";
+import Image from "next/image";
+import DevRelief from "../public/images/DevRelief.png"
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-700 text-gray-300 mt-0">
+    <footer className="bg-gray-900 text-gray-300 mt-0">
       <div className="max-w-7xl mx-auto px-4 py-8 grid md:grid-cols-3 gap-6 text-center md:text-left">
         
-        {/* About Section */}
         <div>
-          <h2 className="text-xl font-bold text-white mb-3">DevRelief</h2>
+          <Link href='/'><Image src={DevRelief} alt="DevRelief Logo" className="ml-18 md:ml-0 w-30 md:w-40"/></Link>
           <p className="text-sm">
             AI-powered bug fixer for developers. Starting with Java errors,
             expanding to all major programming languages soon.

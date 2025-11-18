@@ -1,5 +1,5 @@
 "use client";
-import { motion } from "framer-motion";
+import { backInOut, backOut, motion } from "framer-motion";
 import { Mail, Phone, MapPin } from "lucide-react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
@@ -19,7 +19,7 @@ export default function ContactPage() {
           transition={{ duration: 0.6 }}
           className="text-center max-w-3xl mb-10"
         >
-          <h1 className="text-4xl font-bold mb-4 bg-linear-to-tl from-green-400 to-blue-900 bg-clip-text text-transparent">
+          <h1 className="text-4xl font-bold mb-4 bg-linear-to-r from-black via-blue-900 to-blue-400 bg-clip-text text-transparent">
             Let’s Connect
           </h1>
           <p className="text-lg text-gray-700">
@@ -32,21 +32,21 @@ export default function ContactPage() {
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 w-full max-w-6xl mt-10">
           {[
             {
-              icon: <Mail className="w-10 h-10 text-cyan-600" />,
+              icon: <Mail className="w-10 h-10 text-cyan-200" />,
               title: "Email",
               info: "support@javabugfixer.ai",
               link: "mailto:support@javabugfixer.ai",
               desc: "Feel free to reach out for queries or feedback.",
             },
             {
-              icon: <Phone className="w-10 h-10 text-blue-600" />,
+              icon: <Phone className="w-10 h-10 text-blue-200" />,
               title: "Phone",
               info: "+92 3157847550",
               link: "tel:+923157847550",
               desc: "Whether it’s feedback, bugs, or ideas — drop a message anytime",
             },
             {
-              icon: <MapPin className="w-10 h-10 text-cyan-700" />,
+              icon: <MapPin className="w-10 h-10 text-cyan-200" />,
               title: "Location",
               info: "Karachi, Pakistan",
               link: "https://www.google.com/maps/place/Karachi",
@@ -58,7 +58,7 @@ export default function ContactPage() {
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.2, duration: 0.6 }}
-              className="bg-white border border-cyan-200 rounded-2xl p-6 text-center shadow-md hover:shadow-xl transition-all duration-300"
+              className="bg-gray-800 border border-black text-white rounded-2xl p-6 text-center shadow-md hover:shadow-gray-500 hover:shadow-xl transition-all duration-500 hover:-translate-y-2"
             >
               <div className="flex justify-center mb-3">{item.icon}</div>
               <h3 className="text-xl font-semibold mb-1">{item.title}</h3>
@@ -68,12 +68,12 @@ export default function ContactPage() {
                 href={item.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-cyan-800 font-medium hover:text-blue-600 transition-colors"
+                className="text-cyan-200 font-medium hover:text-blue-600 transition-colors"
               >
                 {item.info}
               </Link>
 
-              <p className="text-gray-600 text-sm mt-2">{item.desc}</p>
+              <p className="text-gray-200 text-sm mt-2">{item.desc}</p>
             </motion.div>
           ))}
         </div>
@@ -85,7 +85,7 @@ export default function ContactPage() {
           transition={{ delay: 0.8, duration: 0.8 }}
           className="mt-20 text-center max-w-2xl"
         >
-          <h2 className="text-2xl font-semibold mb-3 text-cyan-700">Thanks for reaching out 🤝</h2>
+          <h2 className="text-2xl font-semibold mb-3 text-cyan-900">Thanks for reaching out 🤝</h2>
           <p className="text-gray-700">
             This project is growing every day — and your ideas or feedback can help make it even better.  
             Let’s keep learning, building, and improving together.

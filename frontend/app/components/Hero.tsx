@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import { Typewriter } from "react-simple-typewriter";
 
 export default function Home() {
   const [errorText, setErrorText] = useState("");
@@ -33,12 +34,20 @@ export default function Home() {
   }
 
   return (
-    <main className="flex min-h-screen items-center justify-center bg-linear-to-b  from-gray-600 via-gray-200 to-gray-100 p-4">
+    <main className="flex min-h-screen items-center justify-center bg-linear-to-b  from-gray-950 via-gray-500 to-gray-50 p-4">
       <section className="w-full max-w-3xl bg-gray-100 rounded-xl shadow-xl p-6 sm:p-10">
-        <h1 className="text-center text-3xl sm:text-4xl lg:text-5xl font-extrabold text-blue-900 mb-2">
-          AI Powered Java Bug Fixer
-        </h1>
-        <p className="text-center text-gray-700 mb-8">
+        <div className='text-2xl md:text-4xl font-extrabold mb-12 text-center bg-linear-to-r from-black via-blue-950 to-blue-900 text-transparent bg-clip-text tracking-tight'>
+          <Typewriter
+           words={['AI POWERED - JAVA BUG FIXER.']}
+           loop={false}
+           cursor
+           typeSpeed={80}
+           deleteSpeed={0}
+           delaySpeed={1000}
+           />
+          </div>
+          
+        <p className="text-center text-gray-700 mb-8 -mt-5 font-semibold md:tracking-wide">
           Paste your Java error and optional code snippet to get an instant AI-generated fix.
         </p>
 
@@ -94,8 +103,5 @@ export default function Home() {
     </main>
   );
 }
-
-
-
 
 

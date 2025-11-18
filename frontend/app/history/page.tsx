@@ -77,7 +77,7 @@ export default function HistoryPage() {
         {/* Sidebar (Desktop View) */}
         <div className="hidden md:block w-1/3 lg:w-1/4 bg-gray-50 border-r border-gray-200 p-4 overflow-y-auto">
           <div className="flex justify-between items-center mb-4">
-            <h2 className="text-xl font-bold text-blue-900">History</h2>
+            <h2 className="text-xl font-bold text-black">History</h2>
             <button
               onClick={handleLogout}
               className="px-3 py-1 bg-red-500 text-white rounded-md hover:bg-red-600 text-sm"
@@ -115,10 +115,10 @@ export default function HistoryPage() {
               animate={{ x: 0 }}
               exit={{ x: "100%" }}
               transition={{ type: "tween", duration: 0.3 }}
-              className="fixed inset-0 bg-white z-50 flex flex-col w-4/5 sm:w-2/3 shadow-lg"
+              className="fixed inset-0 bg-white z-50 left-16 flex flex-col w-4/5 sm:w-2/3 shadow-lg"
             >
               <div className="flex justify-between items-center p-4 border-b">
-                <h2 className="text-lg font-bold text-blue-900">History</h2>
+                <h2 className="text-lg font-bold text-black">History</h2>
                 <button
                   onClick={() => setMenuOpen(false)}
                   className="text-gray-700 hover:text-red-500"
