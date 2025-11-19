@@ -5,7 +5,7 @@ import { Code, Brain, Rocket, Users } from "lucide-react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Image from "next/image";
-import M_Chaudhry from "../public/images/M_Chaudhry.jpeg"
+import M_Chaudhry from "../public/images/M_Chaudhry.png"
 
 export default function AboutPage() {
   return (

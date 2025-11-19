@@ -9,7 +9,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 py-8 grid md:grid-cols-3 gap-6 text-center md:text-left">
         
         <div>
-          <Link href='/'><Image src={DevRelief} alt="DevRelief Logo" className="ml-18 md:ml-0 w-30 md:w-40"/></Link>
+          <Link href='/'><Image src={DevRelief} alt="DevRelief Logo" className="ml-20 md:ml-0 w-30 md:w-40"/></Link>
           <p className="text-sm">
             AI-powered bug fixer for developers. Starting with Java errors,
             expanding to all major programming languages soon.
